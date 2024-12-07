@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DataBaseActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="База данных"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/inputPad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameTextTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Имя"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            />
+
+        <EditText
+            android:id="@+id/firstNameET"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/widget_border"
+            android:textColor="@color/black"
+            android:hint="Введите Имя"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/lastNameTextTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Фамилия"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"/>
+
+        <EditText
+            android:id="@+id/lastNameET"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/widget_border"
+            android:textColor="@color/black"
+            android:hint="Введите фамилию"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/ageTextTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Возраст"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"/>
+
+        <EditText
+            android:id="@+id/ageET"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/widget_border"
+            android:textColor="@color/black"
+            android:hint="Введите возраст"
+            android:inputType="number"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/positionTextTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Должность"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"/>
+
+        <Spinner
+            android:id="@+id/roleSP"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/widget_border"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonPad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveDataBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
+            android:padding="12dp"
+            android:text="Сохранить данные"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/loadData2BTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Получить данные"
+            android:textSize="18sp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/deleteDataBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Удалить данные"
+            android:textSize="18sp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewLV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
