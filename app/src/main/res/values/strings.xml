@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Database</string>
+    <string name="title_text">База данных</string>
+    <string name="input_first_name_text">Введите Имя</string>
+    <string name="last_name_text">Фамилия</string>
+    <string name="input_last_name_text">Введите фамилию</string>
+    <string name="age_text">Возраст</string>
+    <string name="input_age_text">Введите возраст</string>
+    <string name="role_text">Должность</string>
+    <string name="save_text">Сохранить данные</string>
+    <string name="load_data_text">Получить данные</string>
+    <string name="delete_data_text">Удалить данные</string>
+    <string name="first_name_text">Имя</string>
+    <string name="no_role_text">Без должности</string>
+    <string name="second_age_text">Возраст:</string>
+    <string name="add_person_text">%1$s %2$s добавлен</string>
+    <string name="exit_text">Программа завершена</string>
+    <string name="enter_all_fields_text">Введите все поля</string>
+    <string name="enter_name_text">Введите имя</string>
+    <string name="name_out_of_range_text">Имя должно быть от 2 до 32 символов</string>
+    <string name="input_last_name">Введите фамилию</string>
+    <string name="last_name_out_of_range_text">Фамилия должна быть от 2 до 32 символов</string>
+    <string name="input_age">Введите возраст</string>
+    <string name="age_out_of_range">Возраст должен быть от 1 до 120 лет</string>
 </resources>

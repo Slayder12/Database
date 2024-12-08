@@ -16,7 +16,7 @@
             android:id="@+id/titleTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="База данных"
+            android:text="@string/title_text"
             android:textColor="@color/black"
             android:layout_gravity="center"
             android:textStyle="bold"
@@ -34,7 +34,7 @@
             android:id="@+id/nameTextTV"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Имя"
+            android:text="@string/first_name_text"
             android:gravity="center"
             android:textSize="15sp"
             android:layout_marginStart="2dp"
@@ -49,14 +49,14 @@
             android:layout_marginEnd="2dp"
             android:background="@drawable/widget_border"
             android:textColor="@color/black"
-            android:hint="Введите Имя"
+            android:hint="@string/input_first_name_text"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/lastNameTextTV"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Фамилия"
+            android:text="@string/last_name_text"
             android:gravity="center"
             android:textSize="15sp"
             android:layout_marginStart="2dp"
@@ -70,14 +70,14 @@
             android:layout_marginEnd="2dp"
             android:background="@drawable/widget_border"
             android:textColor="@color/black"
-            android:hint="Введите фамилию"
+            android:hint="@string/input_last_name_text"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/ageTextTV"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Возраст"
+            android:text="@string/age_text"
             android:gravity="center"
             android:textSize="15sp"
             android:layout_marginStart="2dp"
@@ -91,7 +91,7 @@
             android:layout_marginEnd="2dp"
             android:background="@drawable/widget_border"
             android:textColor="@color/black"
-            android:hint="Введите возраст"
+            android:hint="@string/input_age_text"
             android:inputType="number"
             android:textAlignment="center"/>
 
@@ -99,7 +99,7 @@
             android:id="@+id/positionTextTV"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Должность"
+            android:text="@string/role_text"
             android:gravity="center"
             android:textSize="15sp"
             android:layout_marginStart="2dp"
@@ -131,7 +131,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="2dp"
             android:padding="12dp"
-            android:text="Сохранить данные"
+            android:text="@string/save_text"
             android:textSize="18sp"
             android:layout_weight="1" />
 
@@ -139,7 +139,7 @@
             android:id="@+id/loadData2BTN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Получить данные"
+            android:text="@string/load_data_text"
             android:textSize="18sp"
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
@@ -151,7 +151,7 @@
             android:id="@+id/deleteDataBTN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Удалить данные"
+            android:text="@string/delete_data_text"
             android:textSize="18sp"
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"

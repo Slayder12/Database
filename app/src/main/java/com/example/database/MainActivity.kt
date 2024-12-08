@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.exitMenu) {
-            Toast.makeText(this, "Программа завершена", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.exit_text), Toast.LENGTH_SHORT).show()
             finishAffinity()
         }
         return super.onOptionsItemSelected(item)

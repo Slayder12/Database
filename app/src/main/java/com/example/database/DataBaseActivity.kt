@@ -92,7 +92,8 @@ class DataBaseActivity : AppCompatActivity() {
                 role
             )
             clearEditText()
-            Toast.makeText(this, "${person.firstName} ${person.lastName} добавлен", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,
+                getString(R.string.add_person_text, person.firstName, person.lastName), Toast.LENGTH_SHORT).show()
         }
 
         loadDataBTN.setOnClickListener{
@@ -179,7 +180,7 @@ class DataBaseActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.exitMenu) {
-            Toast.makeText(this, "Программа завершена", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.exit_text), Toast.LENGTH_SHORT).show()
             finishAffinity()
         }
         return super.onOptionsItemSelected(item)
