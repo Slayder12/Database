@@ -73,7 +73,7 @@ class DataBaseActivity : AppCompatActivity() {
         personLifeData()
 
         saveDataBTN.setOnClickListener{
-            personData.clear()
+
             val person = Person (
                 firstNameET.text.toString(),
                 lastNameET.text.toString(),
